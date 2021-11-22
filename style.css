@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+#header{
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 6px;
+}
+#menu{
+    margin: 15px 100px;
+    width: 40px;
+    animation: slide 1s linear forwards;
+  animation-delay: 0s;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+nav button{
+    background: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin: 15px 60px;
+    outline: none;
+    border: none;
+    animation: slideBtn 2s linear forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+@keyframes slideBtn{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.textbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 7%;
+}
+.col img{
+    width: 70%;
+    border-radius: 50%;
+    animation: slideImg 2s linear forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+}
+@keyframes slideImg{
+    0%{
+        opacity: 0;
+        transform: translateX(100px) scale(0.2);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+.col{
+    flex-basis: 50%;
+}
+.about{
+    flex-basis: 50%;
+    text-align: left;
+}
+.about h4{
+    font-size: 25px;
+    margin: 5px;
+    animation: slideh4 2s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+@keyframes slideh4{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.about h1{
+    color: aqua;
+    font-size: 62px;
+    animation: slideh1 2s linear forwards;
+    animation-delay: 3.6s;
+    opacity: 0;
+}
+@keyframes slideh1{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.about p{
+    font-size: 16px;
+    text-align: left;
+    margin: 13px 0 30px;
+    line-height: 30px;
+    animation: slidep 2s linear forwards;
+    animation-delay: 4.5s;
+    opacity: 0;
+}
+@keyframes slidep{
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.about a{
+    background: rgb(20, 111, 247);
+    padding: 13px 45px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    animation: slidea 2s linear forwards;
+    animation-delay: 5.5s;
+    opacity: 0;
+}
+@keyframes slidea{
+    0%{
+        transform: scale(0.5) translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#menu-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: -1600px;
+    position: absolute;
+    transition: 1s;
+}
+.banner{
+    width: 50%;
+    height: 100vh;
+    animation: zoom 3s linear forwards;
+    animation-delay: 0.3s;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.nav-bar{
+    background: #333;
+    height: 100vh;
+    width: 50vw;
+}
+.nav-bar img{
+    filter: invert(1);
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    position:absolute;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+    margin: 20% 5%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: block;
+    position: relative;
+    padding: 12px 14px;
+}
+.nav-links ul li a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*----------cv-stylesheet---*/
+#header2{
+    height: 200vh;
+    background: #fff3f3;
+}
+#header2 h4{
+     font-size: 22px;
+     font-weight: 600;
+     margin: 10px;
+     text-align: center;
+}
+.back{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    top: 10%;
+    left: 20%;
+    display: flex;
+    width: 74%;
+    height: 184vh;
+    position: absolute;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.7);
+    border-radius: 4px;
+}
+.col-user{
+    background: rgb(2, 44, 19);
+    flex-basis: 36%;
+    color: #fff;
+}
+.col-details{
+    flex-basis: 64%;
+    background: #fff;
+}
+.userg{
+    width: 60%;
+    border-radius: 50%;
+    margin: 40px 50px 0px 50px;
+}
+.col-user h4{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.col-user h5{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+.col-user hr{
+    width: 80%;
+    margin: 20px 13%;
+}
+.first-row{
+    display: flex;
+}
+.contact-info{
+    margin-left: 8%;
+    text-align: left;
+    margin-top: 25px;
+}
+.contact-info h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.first-row{
+    margin-top: 20px;
+}
+.first-row small{
+    font-size: 17px;
+    font-weight: 300;
+}
+.first-row span i{
+    color: aquamarine;
+    margin-right: 10px;
+}
+.education{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 8%;
+}
+.education h2{
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.first-col{
+    margin: 15px 0;
+}
+.first-col p{
+    color: aquamarine;
+    margin-bottom: 5px;
+}
+.first-col h6{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height:25px;
+}
+.language{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 8%;
+}
+.language h2{
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.language-col{
+    margin-top: 20px;
+    text-align: left;
+}
+.language-col p{
+    font-size: 15px;
+}
+.line{
+    background: #000;
+    width: 90%;
+    height: 8px;
+    margin-top: 10px;
+}
+.line span{
+    height: 8px;
+    width: 85%;
+    background-color: aqua;
+    display: block;
+}
+#germ{
+    width: 50%;
+}
+#sw{
+    width: 87%;
+}
+.social-links{
+    bottom: 20px;
+    display: flex;
+    left: 80px;
+    position: absolute;
+}
+.social-links img{
+    width: 20px;
+    margin: 8px;
+    height: 20px;
+}
+.fb{
+    animation: animatefb 3s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+@keyframes animatefb{
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.tw{
+    animation: animatetw 3s linear forwards;
+    animation-delay: 5.5s;
+    opacity: 0;
+}
+@keyframes animatetw{
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.ig{
+    animation: animateig 3s linear forwards;
+    animation-delay: 6s;
+    opacity: 0;
+}
+@keyframes animateig{
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.first-paragraph{
+    padding: 20px 21px;
+}
+.first-paragraph h3{
+    color: rgb(2, 44, 19);
+    margin: 8px;
+    text-align: left;
+    font-weight: 700;
+}
+.first-paragraph p{
+    font-size: 16px;
+    font-weight: 'poppins',sans-serif;
+    font-weight: 500;
+    padding: 7px;
+}
+.second-paragraph{
+    padding: 20px 25px;
+}
+.second-paragraph h2{
+    margin: 15px 0;
+}
+.first-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.left-side{
+   margin-right: 6px;
+}
+.left-side p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+.left-side h5{
+    font-size: 13px;
+    color: gray;
+}
+.right-side{
+    text-align: left;
+}
+.right-side h3{
+    color:rgb(23, 105, 105);
+    margin-bottom: 5px;
+}
+.third-paragraph{
+    padding: 17px 18px;
+}
+.third-paragraph h2{
+    color: rgb(2, 44, 19);
+}
+.first-skill{
+    margin: 25px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-skill small{
+    color: gray;
+    margin-right: 5px;
+    font-size: 13px;
+}
+.dark{
+    background-color: gray;
+    width: 85%;
+    height: 8px;
+    margin: 3px 0;
+}
+.dark span{
+    background-color: aqua;
+    height: 8px;
+    display: block;
+}
+#html{
+    animation: moveh 2s linear forwards;
+    animation-delay: 0s;
+    opacity: 0;
+    width: 100%;
+}
+@keyframes moveh{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+#css{
+    width: 88%;
+    animation: move 2s linear forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+@keyframes move{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 88%;
+    }
+}
+#js{
+    width: 80%;
+    animation: movejs 2s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes movejs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 80%;
+    }
+}
+#ph{
+    width: 97%;
+    animation: moveph 2s linear forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+@keyframes moveph{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 97%;
+    }
+}
+#ill{
+    width: 84%;
+    animation: moveill 2s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+@keyframes moveill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 84%;
+    }
+}
+#bl{
+    width: 100%;
+    animation: movebl 2s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+@keyframes movebl{
+    0%{
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+.fourth-paragraph{
+    padding: 18px 14px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+}
+.first-interest{
+    display: flex;
+    margin: 10px 0px;
+}
+.first-interest span i{
+    margin-right: 5px;
+    color: aqua;
+}

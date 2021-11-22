@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <img src="/Images/menu.png" id="menu">
+            <button onclick="alert(Date())">HIRE ME</button>
+        </nav>
+        <div class="textbox">
+           <div class="col">
+            <img src="/Images/girl.jpg">
+           </div>
+            <div class="about">
+                <h4>Hi,I am</h4>
+                <h1>Eliana Jiokof</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisi<br>
+                     elit. Ab possimus atque non laborum quas, distin<br>
+                     ctio sit voluptates eaque debitis veritatis, quaerat,<br>
+                      fugiat nesciunt corporis adipisci at? Vel cum qu<br>
+                      isquam laborum, fugiat saepe modi voluptates optio.<br>
+                      ctio sit voluptates eaque debitis veritatis, quaerat,<br>
+                      fugiat nesciunt corporis adipisci at? Vel cum qu<br>
+                      isquam laborum, fugiat saepe modi voluptates optio.
+                    </p>
+                    <a href="/cv.html">DOWNLOAD MY CV</a>
+            </div>
+            <div class="social-links">
+              <img src="/Images/facebook.png" class="fb">
+              <img src="/Images/twitter.png" class="tw">
+              <img src="/Images/instagram.png" class="ig">
+            </div>
+        </div>
+        <div id="menu-section">
+            <img src="/Images/banner.jpg" class="banner">
+          <div class="nav-bar">
+              <img src="/Images/close.png" id="close">
+             <div class="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+             </div>
+          </div>
+        </div>
+    </section>
+    <script>
+        var menu = document.getElementById('menu');
+        var menuSection = document.getElementById('menu-section');
+        var close = document.getElementById('close');
+
+
+    menuSection.style.left = '-1600px';
+        menu.onclick = function(){
+          if( menuSection.style.left === '-1600px'){
+            menuSection.style.left = '0px';
+          }
+        }
+        close.onclick = function(){
+            if( menuSection.style.left === '0px'){
+              menuSection.style.left = '-1600px';
+            }
+          }
+    </script>
+</body>
+</html>
